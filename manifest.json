@@ -1,0 +1,26 @@
+{
+  "application": {
+    "name": "tomcat_app_v2",
+    "version": "1.0",
+    "project": "Default",
+    "mode": "SERIAL",
+    "components": {
+      "component": [
+        {
+          "name": "Tomcat-RC2_v2",
+          "description": "This is tomcat component",
+          "tier": "TomcatAppTier",
+          "artifact": {
+            "artifactType": "TOMCAT",
+            "artifactName": "org.ec:npweb",
+            "artifactVersion": "1.0",
+            "sourceDirectory" : "/c/Users/anis/Desktop/create_artefacts/tomcat",
+            "artifactFileName": "jpetstore.war",
+            "tomcatConfig" : "config",
+            "contextPath": "myapp"
+          }
+        }
+      ]
+    }
+  }
+}
