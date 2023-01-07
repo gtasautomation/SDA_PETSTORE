@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                
+                echo 'Hello World'
+                echo "%BUILD_ID"
+                 echo "$BUILD_ID"
+                 echo "UAT"-"$BUILD_NUMBER"
+                 echo UAT-"$BUILD_ID" 
+                 echo UAT-"$BUILD_DISPLAY_NAME"
+                 echo "$JOB_NAME"
+                 echo "$BUILD_TAG" 
+                 echo "$EXECUTOR_NUMBER"
+                 echo "$WORKSPACE"
+                 echo "$JENKINS_HOME"
+                 echo "$JENKINS_URL"
+                 echo "$BUILD_URL"
+                 echo "$JOB_URL"
+                cloudBeesFlowCreateAndDeployAppFromJenkinsPackage configuration: 'cloudbeesconfig', filePath: 'C:\\Users\\anis\\Desktop\\create_artefacts\\tomcat'
+                
+                
+                
+               
+                
+            }
+        }
+    }
+}
+
+
+
